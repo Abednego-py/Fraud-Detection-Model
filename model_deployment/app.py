@@ -82,7 +82,7 @@ def main():
     channel_id = st.selectbox("Select channel", ('web', 'android', 'ios', 'pay later', 'checkout'), placeholder="Product Category")
     transaction_type = st.selectbox("Select transaction type", ('debit', 'credit'), placeholder='select transaction type')
     amount = st.text_input("Amount :  ")
-    pricing_strategy = st.text_input("Enter integer values between 0 and 4: ")
+    pricing_strategy = st.text_input("Pricing Strategy - Enter integer values between 0 and 4: ")
     
     if(transaction_type == Transaction_Type.CREDIT.value):
         amount = - int(amount)
